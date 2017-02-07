@@ -3,3 +3,7 @@
 ################################################################################
 
 /CurrencyConverter.Bot/bin
+/CurrencyConverter.Bot/obj
+/CurrencyConverter.Test/bin/Debug
+/CurrencyConverter.Test/obj
+/packages
