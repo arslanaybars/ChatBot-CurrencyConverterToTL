@@ -7,3 +7,6 @@
 /CurrencyConverter.Test/bin/Debug
 /CurrencyConverter.Test/obj
 /packages
+/.vs/CurrencyConverter/v14
+/CurrencyConverter.Bot/Properties/PublishProfiles
+/SolutionItems.txt

@@ -55,11 +55,14 @@ namespace CurrencyConverter.Bot.Controllers
                 }
 
                 await connector.Conversations.ReplyToActivityAsync(reply);
+
             }
             else
             {
                 HandleSystemMessage(activity);
             }
+
+
 
             var response = Request.CreateResponse(HttpStatusCode.OK);
             return response;
@@ -77,6 +80,8 @@ namespace CurrencyConverter.Bot.Controllers
                 // Handle conversation state changes, like members being added and removed
                 // Use Activity.MembersAdded and Activity.MembersRemoved and Activity.Action for info
                 // Not available in all channels
+                //return message.CreateReply($"TL karşılığını görmek istediğiniz para birimini giriniz ? (💵) (💶)");
+
             }
             else if (message.Type == ActivityTypes.ContactRelationUpdate)
             {
