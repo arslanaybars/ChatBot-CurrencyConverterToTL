@@ -37,7 +37,6 @@ namespace CurrencyConverter.Bot.Controllers
             {
                 Logger.Debug($"User post a text, activity.Text : {activity.Text}");
 
-
                 var currency = StringToCurrency.Dictionary.FirstOrDefault(x => activity.Text.ToLower().Contains(x.Key)).Value;
                 var currencyResponse = currencyConverterBloomberg.FindRate(currency);
                 //var currencyResponse = currencyConverterFixerIo.FindRate(currency);
